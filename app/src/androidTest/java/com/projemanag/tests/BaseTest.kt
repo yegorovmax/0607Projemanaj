@@ -63,41 +63,41 @@ open class BaseTest {
             }
         }
 
-        @Test
-        fun updateCardNameTest() {
-            login {
-                tapSignIn()
-                typeEmail()
-                typePassword()
-                tapSignInButton()
-            }
-
-            boardList {
-                selectBoard(abcBoadr)
-            }
-
-            boardDetail {
-                tapOncard()
-            }
-
-            cardDetail {
-                updateCardName(updatedCardName)
-                tapUpdateCardDetails()
-            }
-
-            boardDetail {
-                assertEquals(getCardNam(), updatedCardName)
-            }
-
-            boardDetail {
-                tapOncard()
-            }
-
-            cardDetail {
-                updateCardName(defaultCardName)
-                tapUpdateCardDetails()
-            }
-        }
+//        @Test
+//        fun updateCardNameTest() {
+//            login {
+//                tapSignIn()
+//                typeEmail()
+//                typePassword()
+//                tapSignInButton()
+//            }
+//
+//            boardList {
+//                selectBoard(abcBoadr)
+//            }
+//
+//            boardDetail {
+//                tapOncard()
+//            }
+//
+//            cardDetail {
+//                updateCardName(updatedCardName)
+//                tapUpdateCardDetails()
+//            }
+//
+//            boardDetail {
+//                assertEquals(getCardNam(), updatedCardName)
+//            }
+//
+//            boardDetail {
+//                tapOncard()
+//            }
+//
+//            cardDetail {
+//                updateCardName(defaultCardName)
+//                tapUpdateCardDetails()
+//            }
+//        }
 
         @Test
         fun addListToBoardTest(){
@@ -227,4 +227,4 @@ open class BaseTest {
                 }
         }
     }
-} // hh
+}
