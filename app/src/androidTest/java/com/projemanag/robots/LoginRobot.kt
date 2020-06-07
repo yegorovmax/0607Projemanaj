@@ -22,4 +22,4 @@ class LoginRobot : BaseRobot() {
     fun typeEmailToCreateBoard() = typeInText(signInEmailToCreateBoard, emailMatcher)
     fun typePassword() = typeInText(signInPassword, passwordMatcher)
     fun tapSignInButton() = tapBy(signInButtonMatcher)
-}
+} //test

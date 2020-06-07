@@ -14,7 +14,7 @@ import junit.framework.Assert.assertEquals
 import org.junit.After
 import org.junit.Before
 
-open class BaseTest {
+open class AllTests {
 
     @LargeTest
     @RunWith(AndroidJUnit4::class)
