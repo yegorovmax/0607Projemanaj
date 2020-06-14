@@ -36,7 +36,6 @@ open class BaseTest {
         private val updatedCardName = "NewCardName"
         private val defaultCardName = "CardNameDefault"
         private val emptyBoardListName = "Add List"
-        private val boardName = "Board"
         private val defaultName = "DefaultName"
         private val updatedName = "UpdatedName"
         private val emptyCardText = "Add Card"
