@@ -17,8 +17,7 @@ import org.junit.Before
 open class BaseTest {
 
     @LargeTest
-    @RunWith(AndroidJUnit4::class)
-    class RestaurantMenuTest {
+    //@RunWith(AndroidJUnit4::class)
 
         @Before
         fun setup() { IdlingRegistry.getInstance().register(countingIdlingResource) }
@@ -222,5 +221,5 @@ open class BaseTest {
                     tapUpdateProfileButton()
                 }
         }
-    }
+
 } // test
