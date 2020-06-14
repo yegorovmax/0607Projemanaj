@@ -17,12 +17,12 @@ class Test : BaseTest() {
     @JvmField
     val rule = ActivityTestRule(MainActivity::class.java)
 
-    @Test
-    fun addListToBoard(){
-        boardList {
-           // sleep(5000)
-            tapBoardCard()
-        }
+//    @Test
+//    fun addListToBoard(){
+//        boardList {
+//           // sleep(5000)
+//            tapBoardCard()
+//        }
 //        board {
 //           // sleep()
 //            tapDeleteListButtonIfPresent()
@@ -36,16 +36,16 @@ class Test : BaseTest() {
 //            tapDeleteListButton()
 //            tapYesButton()
 //        }
-    }
+  //  }
 
-    @Test
-    fun addCard(){
-        boardList {
-           // sleep(5000)
-            tapBoardCard()
-        }
-//        board {
-//          //  sleep()
+//    @Test
+//    fun addCard(){
+//        boardList {
+//           // sleep(5000)
+//            tapBoardCard()
+//        }
+////        board {
+////          //  sleep()
 //            tapDeleteListButtonIfPresent()
 //            tapYesButtonIfPresent()
 //           // sleep()
@@ -61,5 +61,5 @@ class Test : BaseTest() {
 //            tapDeleteListButton()
 //            tapYesButton()
 //        }
-    }
+ //   }
 }
