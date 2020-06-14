@@ -18,7 +18,7 @@ open class AllTests {
 
     @LargeTest
     @RunWith(AndroidJUnit4::class)
-    class RestaurantMenuTest {
+    class AllTests {
 
         @Before
         fun setup() { IdlingRegistry.getInstance().register(countingIdlingResource) }
