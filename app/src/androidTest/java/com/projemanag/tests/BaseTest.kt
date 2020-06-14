@@ -18,7 +18,7 @@ open class BaseTest {
 
     @LargeTest
     @RunWith(AndroidJUnit4::class)
-    class AllTests {
+    class BaseTest {
 
         @Before
         fun setup() { IdlingRegistry.getInstance().register(countingIdlingResource) }
@@ -223,4 +223,4 @@ open class BaseTest {
                 }
         }
     }
-} // test
+} //
