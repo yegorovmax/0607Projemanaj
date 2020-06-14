@@ -31,15 +31,11 @@ open class AllTests {
         var activityRule: ActivityTestRule<IntroActivity> =
             ActivityTestRule(IntroActivity::class.java)
         private val boardWithImage = "board with image"
-        private val abcBoadr = "ABC"
-        private val xyzBoadr = "XYZ"
-        private val defaultBoard = "Board"
+        private val abcBoard = "ABC"
+        private val xyzBoard = "XYZ"
         private val updatedCardName = "NewCardName"
         private val defaultCardName = "CardNameDefault"
         private val emptyBoardListName = "Add List"
-        private val listName = "List"
-        private val date = "12/05/1993"
-        private val boardName = "Board"
         private val defaultName = "DefaultName"
         private val updatedName = "UpdatedName"
         private val emptyCardText = "Add Card"
@@ -63,41 +59,41 @@ open class AllTests {
             }
         }
 
-//        @Test
-//        fun updateCardNameTest() {
-//            login {
-//                tapSignIn()
-//                typeEmail()
-//                typePassword()
-//                tapSignInButton()
-//            }
-//
-//            boardList {
-//                selectBoard(abcBoadr)
-//            }
-//
-//            boardDetail {
-//                tapOncard()
-//            }
-//
-//            cardDetail {
-//                updateCardName(updatedCardName)
-//                tapUpdateCardDetails()
-//            }
-//
-//            boardDetail {
-//                assertEquals(getCardNam(), updatedCardName)
-//            }
-//
-//            boardDetail {
-//                tapOncard()
-//            }
-//
-//            cardDetail {
-//                updateCardName(defaultCardName)
-//                tapUpdateCardDetails()
-//            }
-//        }
+        @Test
+        fun updateCardNameTest() {
+            login {
+                tapSignIn()
+                typeEmail()
+                typePassword()
+                tapSignInButton()
+            }
+
+            boardList {
+                selectBoard(abcBoard)
+            }
+
+            boardDetail {
+                tapOncard()
+            }
+
+            cardDetail {
+                updateCardName(updatedCardName)
+                tapUpdateCardDetails()
+            }
+
+            boardDetail {
+                assertEquals(getCardNam(), updatedCardName)
+            }
+
+            boardDetail {
+                tapOncard()
+            }
+
+            cardDetail {
+                updateCardName(defaultCardName)
+                tapUpdateCardDetails()
+            }
+        }
 
         @Test
         fun addListToBoardTest(){
@@ -134,7 +130,7 @@ open class AllTests {
             }
 
             boardList {
-                selectBoard(xyzBoadr)
+                selectBoard(xyzBoard)
             }
 
             boardDetail {
