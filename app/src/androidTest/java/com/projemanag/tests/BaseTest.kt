@@ -215,7 +215,7 @@ open class BaseTest {
                 }
 
                 profileDetail {
-                    assertEquals(getUserName(), defaultName)
+                    assertEquals(getUserName(), updatedName)
                     editProfileName(defaultName)
                     tapUpdateProfileButton()
                 }
