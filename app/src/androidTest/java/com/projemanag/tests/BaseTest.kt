@@ -117,7 +117,6 @@ open class BaseTest {
                 tapOnYesButtonOnAlert()
             }
         }
-
         @Test
         fun createAndDeleteCardTest() {
             login {
