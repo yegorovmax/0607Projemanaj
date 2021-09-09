@@ -39,9 +39,6 @@ open class BaseTest {
         private val updatedName = "UpdatedName"
         private val emptyCardText = "Add Card"
 
-
-
-    
         @Test
         fun addBoardTest() {
             login {
