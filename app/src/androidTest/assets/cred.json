@@ -1,5 +1,14 @@
 {
   "email": "surepma@gmail.com",
   "emailToCreateBoard": "surepma1@gmail.com",
-  "password": "123456"
+  "password": "123456",
+  "boardWithImage" : "board with image",
+  "abcBoadr" : "ABC",
+  "xyzBoadr" : "XYZ",
+  "updatedCardName" : "NewCardName",
+  "defaultCardName" : "CardNameDefault",
+  "emptyBoardListName" : "Add List",
+  "defaultName" : "DefaultName",
+   "updatedName" : "UpdatedName",
+  "emptyCardText" : "Add Card"
 }

@@ -17,8 +17,7 @@ import org.junit.Before
 open class BaseTest {
 
     @LargeTest
-    @RunWith(AndroidJUnit4::class)
-    class RestaurantMenuTest {
+    //@RunWith(AndroidJUnit4::class)
 
         @Before
         fun setup() { IdlingRegistry.getInstance().register(countingIdlingResource) }
@@ -33,17 +32,12 @@ open class BaseTest {
         private val boardWithImage = "board with image"
         private val abcBoadr = "ABC"
         private val xyzBoadr = "XYZ"
-        private val defaultBoard = "Board"
         private val updatedCardName = "NewCardName"
         private val defaultCardName = "CardNameDefault"
         private val emptyBoardListName = "Add List"
-        private val listName = "List"
-        private val date = "12/05/1993"
-        private val boardName = "Board"
         private val defaultName = "DefaultName"
         private val updatedName = "UpdatedName"
         private val emptyCardText = "Add Card"
-
 
         @Test
         fun addBoardTest() {
@@ -226,5 +220,5 @@ open class BaseTest {
                     tapUpdateProfileButton()
                 }
         }
-    }
-}
+
+} //

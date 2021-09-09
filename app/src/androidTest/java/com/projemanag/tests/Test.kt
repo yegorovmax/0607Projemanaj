@@ -1,11 +1,15 @@
 package com.projemanag.tests
 
+import androidx.test.espresso.IdlingRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import com.projemanag.activities.MainActivity
 import com.projemanag.robots.*
-import junit.framework.Assert
+import com.projemanag.utils.Constants
+import junit.framework.Assert.assertEquals
+import org.junit.After
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -17,12 +21,12 @@ class Test : BaseTest() {
     @JvmField
     val rule = ActivityTestRule(MainActivity::class.java)
 
-    @Test
-    fun addListToBoard(){
-        boardList {
-           // sleep(5000)
-            tapBoardCard()
-        }
+//    @Test
+//    fun addListToBoard(){
+//        boardList {
+//           // sleep(5000)
+//            tapBoardCard()
+//        }
 //        board {
 //           // sleep()
 //            tapDeleteListButtonIfPresent()
@@ -36,16 +40,16 @@ class Test : BaseTest() {
 //            tapDeleteListButton()
 //            tapYesButton()
 //        }
-    }
+  //  }
 
-    @Test
-    fun addCard(){
-        boardList {
-           // sleep(5000)
-            tapBoardCard()
-        }
-//        board {
-//          //  sleep()
+//    @Test
+//    fun addCard(){
+//        boardList {
+//           // sleep(5000)
+//            tapBoardCard()
+//        }
+////        board {
+////          //  sleep()
 //            tapDeleteListButtonIfPresent()
 //            tapYesButtonIfPresent()
 //           // sleep()
@@ -61,5 +65,5 @@ class Test : BaseTest() {
 //            tapDeleteListButton()
 //            tapYesButton()
 //        }
-    }
+ //   }
 }
