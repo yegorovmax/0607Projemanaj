@@ -92,7 +92,7 @@ open class BaseTest {
                 tapUpdateCardDetails()
             }
         }
-
+/*
         @Test
         fun addListToBoardTest(){
             login {
@@ -182,7 +182,7 @@ open class BaseTest {
                 assertEquals(getEmptyBoardCardName(), emptyBoardListName)
             }
         }
-
+*/
        @Test
         fun updateUserNameTest() {
 
@@ -221,4 +221,4 @@ open class BaseTest {
                 }
         }
 
-} //
+}
