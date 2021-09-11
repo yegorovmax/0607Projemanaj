@@ -17,6 +17,7 @@ class Test : BaseTest() {
     @JvmField
     val rule = ActivityTestRule(MainActivity::class.java)
 
+
     @Test
     fun addListToBoard(){
         boardList {
